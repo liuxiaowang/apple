@@ -1,0 +1,639 @@
+/*
+* @Author: liuxiaoyu
+* @Date:   2017-03-29 14:34:09
+* @Last Modified by:   liuxiaoyu
+* @Last Modified time: 2017-03-30 14:11:14
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+
+}
+.guanggao{
+	width: 100%;
+	height: 40px;
+	background: #444;
+}
+.guanggao .text{
+	width: 976px;
+	height: 40px;
+	text-align: right;
+	line-height: 40px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #a8a8aa;
+}
+
+
+.banner{
+	width: 100%;
+	height: 540px;
+	background: #cc3341;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	overflow: hidden;
+}
+.banner .nav{
+	width: 100%;
+	height: 44px;
+	background: #333;
+	background: rgba(0, 0, 0, 0.8);
+	line-height: 44px;
+	text-align: center;
+	z-index: 100;
+	position: relative;
+}
+.banner .nav .con1{
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+	text-align: justify;
+}
+.banner .nav .con1 a{
+	display: inline-block;
+	font-size: 14px;
+}
+.banner .nav .con1:after{
+	content: "";
+	display: inline-block;
+	width: 100%
+}
+.banner .nav .con2{
+	width: 770px;
+	height: 44px;
+	text-align: justify;
+	display: none;
+	padding: 0 20px;
+}
+.banner .nav .con2:after{
+	content: "";
+	display: inline-block;
+	width: 100%
+}
+.banner .banner-1{
+	width: 100%;
+	height: 540px;
+	display: block;
+}
+.banner .inner{
+	width: 100%;
+	height: 220px;
+	position: absolute;
+	top: 44px;
+	bottom: 276px;
+}
+.banner .inner .text{
+	width: 100%;
+	height: 152px;
+	position: absolute;
+	top: 34px;
+	left: 0;
+	text-align: center;
+
+}
+.inner .text .tbb{
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	font-size: 12px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.inner .text .iphone7{
+	font-size: 32px;
+    line-height: 1.5625;
+    font-weight: 500;
+    letter-spacing: .011em;
+    padding-left: 0.4em;
+}
+.inner .text .xia{
+	font-size: 42px;
+    line-height: 1.14615;
+    font-weight: 500;
+    letter-spacing: .006em;
+    padding-left: 0.4em;
+}
+.banner .banner-1{
+	width: 100%;
+	height: 540px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background-image: url(../img/iphone7_large.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 220px;
+
+
+}
+.banner .banner-1 .left,.banner .banner-1 .right{
+	width: 270px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 20;
+
+}
+.banner .banner-1 .left:hover .btn{
+	opacity: 1;
+
+}
+.banner .banner-1 .right:hover .btn{
+	opacity: 1;
+
+}
+.banner .banner-1 .left{
+	left: 0;
+}
+.banner .banner-1 .left>div,.banner .banner-1 .right>div{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: rgba(180, 180, 180, 0.25);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	margin-left: 20px;
+	transition: all 1s ease;
+	opacity: 0;
+}
+.banner .banner-1 .right>div{
+	margin-right: 20px;
+	right: 0;
+}
+.banner .banner-1 .btn{
+	text-align: center;
+	line-height: 64px;
+	font-size: 30px;
+	color: #333;
+}
+.content{
+	width: 100%;
+	height: 200px;
+	background: blue;
+	position: absolute;
+	top: 580px;
+	left: 0;
+}
+.content ul{
+	width: 100%;
+	height: 200px;
+	background: pink;
+}
+.content ul .tupian{
+	float: left;
+	width: 25%;
+	height: 200px;
+	box-sizing: border-box;
+}
+.content ul .tupian .tu1{
+	background-image: url(../img/w_large.jpg);
+	background-size: 360px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 200px;
+	border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+	box-sizing: border-box;
+
+}
+.content ul .tupian .tu2{
+	background-image: url(../img/i_large.jpg);
+	background-size: 360px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 200px;
+	border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+	box-sizing: border-box;
+
+}
+.content ul .tupian .tu3{
+	background-image: url(../img/a_large.jpg);
+	background-size: 360px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 200px;
+	border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+	box-sizing: border-box;
+
+}
+.content ul .tupian .tu4{
+	background-image: url(../img/s_large.jpg);
+	background-size: 360px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 200px;
+	border-top: 2px solid #fff;
+    border-right: 0;
+	box-sizing: border-box;
+}
+.footer{
+	width: 100%;
+	height: 420px;
+	background: #f2f2f2;
+    color: #333;
+	position: absolute;
+	top: 780px;
+	left: 0;
+	border-top: 1px solid #fff;
+	font-size: 11px;
+	position: absolute;
+	top: 780px;
+	left: 0;
+}
+.footer .footer-content{
+	width: 980px;
+	height: 401px;
+	padding: 0 22px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.footer .footer-content .footer1{
+	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	color: #888;
+	padding: 17px 0 11px;
+	width: 100%;
+	height: 21px;
+}
+.footer .footer-content .footer-nav{
+	font-size: 11px;
+    line-height: 1.27273;
+    font-weight: 400;
+    letter-spacing: .005em;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    width: 100%;
+    height: 225px;
+}
+.footer-nav .nav-item{
+	box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+    width: 20%;
+}
+.footer-nav .nav-item .nav-item-1{
+	margin-right: 20px;
+	box-sizing: border-box;
+}
+.footer-nav .nav-item .nav-item-1 .item{
+	width: 100%;
+    margin-bottom: 6px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+   
+}
+.footer-nav .nav-item .nav-item-1 .item a{
+	color: #333;
+}
+.footer .footer-content .dibu{
+	border-top: none;
+    color: #888;
+    padding: 34px 0 21px;
+
+}
+.footer .footer-content .dibu .dibu-1{
+	border-bottom: 1px solid #d6d6d6;
+	margin-bottom: 7px;
+    padding-bottom: 6px;
+}
+.footer .footer-content .dibu .dibu-1 a{
+	color: #0070c9;
+}
+.footer .footer-content .footer-nav-1{
+	width: 100%;
+	display: none
+}
+.footer .footer-content .footer-nav-1 h3{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #d6d6d6;
+	color: #333;
+}
+.dibu .dibu-2 .dibu-2-3{
+	float: right;
+    margin-top: 3px;
+    position: relative;
+    top: -3px;
+    z-index: 2;
+    white-space: nowrap;
+
+}
+.dibu-2-3 a{
+	    color: #555;
+}
+.dibu .dibu-2 .dibu-2-3 .china{
+	background-repeat: no-repeat;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/china.png);
+    padding-right: 5px;
+    background-position: left center;
+    float: left;
+    margin-top: -1px;
+}
+.dibu .dibu-2 .dibu-2-1{
+	margin-right: 30px;
+    float: left;
+    margin-top: 3px;
+    font-size: 12px;
+}
+.dibu .dibu-2 .dibu-2-2{
+	margin-right: 30px;
+    float: left;
+    margin-top: 3px;
+    position: relative;
+    top: -3px;
+    z-index: 1;
+
+}
+.dibu .dibu-2 .dibu-2-2 .link{
+	border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    display: inline-block;
+    margin-top: 3px;
+    white-space: nowrap;
+    color: #555;
+    text-decoration: none;
+    font-size: 10px;
+}
+.dibu-3{
+	margin-top: 5px;
+    color: #999;
+}
+.dibu-3 a{
+	color: #999;
+} 
+
+/* .footer-nav .nav-item .nav-item-1 .first{
+	font-size: 15px;
+} */
+@media screen and (max-width: 1000px){
+	.banner{
+		width: 100%;
+		height: 500px;
+	}
+	.banner .nav .con1{
+		padding: 0 20px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.guanggao .text{
+		padding: 0 20px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.inner .text .tbb{
+		line-height: 1.5;
+	    font-weight: 400;
+	    letter-spacing: 0em;
+		margin-bottom: 20px;
+    	padding: 2px 8px;
+    	height: 16px;
+    	width: 36px;
+    	font-size: 10px;
+	}
+	.inner .text .iphone7{
+		padding-left: 0;
+		font-size: 28px;
+	    line-height: 1.63652;
+	    font-weight: 500;
+	    letter-spacing: .012em;
+    }
+	.inner .text .xia{
+		padding-left: 0.4em;
+		line-height: 1.175;
+		font-size: 40px;
+	    font-weight: 500;
+	    letter-spacing: .008em;
+	}
+	.banner .banner-1{
+	width: 100%;
+	height: 550px;
+	display: block;
+	background-image: url(../img/iphone7_medium.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 220px;
+	}
+	.content{
+		position: absolute;
+		top: 540px;
+		left: 0;
+	}
+	.content ul .tupian{
+	float: left;
+	width: 50%;
+	height: 200px;
+	box-sizing: border-box;
+	}
+	.content ul .tupian .tu1{
+	background-image: url(../img/w_large.jpg);
+	background-size: 600px 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 200px;
+	border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+	box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu2{
+		background-image: url(../img/i_medium.jpg);
+		background-size: 600px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: 2px solid #fff;
+		box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu3{
+		background-image: url(../img/a_medium.jpg);
+		background-size: 600px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: 2px solid #fff;
+		box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu4{
+		background-image: url(../img/s_medium.jpg);
+		background-size: 600px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: 0;
+		box-sizing: border-box;
+	}
+	.footer .footer-content{
+		width: 100%;	
+	}
+	.footer-nav .nav-item{
+		
+	    width: 20%;
+	}
+	.footer{
+		position: absolute;
+		top: 940px;
+		left: 0;
+	}
+	
+/* 	.footer .footer-content .footer-nav{
+		width: 100%;
+	}
+	.footer .footer-content{
+		width: 100%;
+	} */
+}
+@media screen and (max-width: 770px){
+	.banner .nav .con1{
+		display: none;
+	}
+	.banner .nav .con2{
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.inner .text .tbb{
+	margin-bottom: 5px;
+	}
+	.inner .text .iphone7{
+		padding-left: 0;
+		font-size: 22px;
+	    line-height: 1.63652;
+	    font-weight: 500;
+	    letter-spacing: .016em;
+	}
+	.inner .text .xia{
+		padding-left: 0;
+		line-height: 1.25834;
+		font-size: 31px;
+	    font-weight: 500;
+	    letter-spacing: .011em;
+	}
+	.banner{
+		height: 420px;
+	}
+	.banner .banner-1{
+		width: 100%;
+		height: 420px;
+		display: block;
+		background-image: url(../img/iphone7_small.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center 180px;
+	}
+	.content ul .tupian{
+		float: left;
+		width: 100%;
+		height: 200px;
+		box-sizing: border-box;
+	}
+	.content ul .tupian .tu1{
+		background-image: url(../img/w_small.jpg);
+		background-size: 736px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: none;
+		box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu2{
+		background-image: url(../img/i_small.jpg);
+		background-size: 736px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: none;
+		box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu3{
+		background-image: url(../img/a_small.jpg);
+		background-size: 736px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: none;
+		box-sizing: border-box;
+
+	}
+	.content ul .tupian .tu4{
+		background-image: url(../img/s_small.jpg);
+		background-size: 736px 200px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 200px;
+		border-top: 2px solid #fff;
+	    border-right: none;
+		box-sizing: border-box;
+	}
+	.content{
+		position: absolute;
+		top: 460px;
+		left: 0;
+	}
+	.footer .footer-content .footer-nav-1{
+		display: block;
+		height: 293px;
+		padding-top: 20px;
+		box-sizing: border-box;
+	}
+	.footer .footer-content .footer-nav{
+		display: none;
+	}
+	.footer{
+		position: absolute;
+		top: 1260px;
+		left: 0;
+		height: 508px;
+	}
+	.footer .footer-content{
+		height: 488px;
+	}
+}
